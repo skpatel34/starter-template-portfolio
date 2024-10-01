@@ -1,4 +1,4 @@
-export const TechIcon = ({ component }: { component: React.ElementType}) => {
+export const TechIcon = ({ component }: { component: React.ElementType }) => {
   const Component = component;
   return (
     <>
@@ -11,4 +11,4 @@ export const TechIcon = ({ component }: { component: React.ElementType}) => {
       </svg>
     </>
   );
-}
+};

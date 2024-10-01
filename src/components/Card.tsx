@@ -6,7 +6,7 @@ export const Card = ({
   className,
   children,
   ...other
-}: ComponentPropsWithRef<'div'>) => {
+}: ComponentPropsWithRef<"div">) => {
   return (
     <div
       className={twMerge(

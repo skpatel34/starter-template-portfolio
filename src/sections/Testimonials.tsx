@@ -56,33 +56,32 @@ export const TestimonialsSection = () => {
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {testimonials.map((testimonial) => (
-              <Card
-                key={testimonial.name}
-                className="max-w-xs p-6 md:p-8 md:max-w-md hover:-rotate-3 transition duration-300"
-              >
-                <div className="flex gap-4 items-center">
-                  <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
-                    <Image
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="max-h-full"
-                    />
-                  </div>
-                  <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-white/40">
-                      {testimonial.position}
+                  <Card
+                    key={testimonial.name}
+                    className="max-w-xs p-6 md:p-8 md:max-w-md hover:-rotate-3 transition duration-300"
+                  >
+                    <div className="flex gap-4 items-center">
+                      <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
+                        <Image
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                          className="max-h-full"
+                        />
+                      </div>
+                      <div>
+                        <div className="font-semibold">{testimonial.name}</div>
+                        <div className="text-sm text-white/40">
+                          {testimonial.position}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <p className="mt-4 md:mt-6 text-sm md:text-base">
-                  {testimonial.text}
-                </p>
-              </Card>
-            ))}
+                    <p className="mt-4 md:mt-6 text-sm md:text-base">
+                      {testimonial.text}
+                    </p>
+                  </Card>
+                ))}
               </Fragment>
             ))}
-            
           </div>
         </div>
       </div>
