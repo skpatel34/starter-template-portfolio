@@ -4,7 +4,6 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -18,7 +17,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://youtu.be/4k7IdSLx4h6w",
     image: darkSaasLandingPage,
   },
   {
@@ -30,7 +29,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://youtu.be/7hi5zwO725yc",
     image: lightSaasLandingPage,
   },
   {
@@ -42,7 +41,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://youtu.be/Z7I5uS2RHMHg",
     image: aiStartupLandingPage,
   },
 ];
@@ -70,7 +69,7 @@ export const ProjectsSection = () => {
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>&bull;</span>
-                    <span>{project.year}</span>
+                    <span>{project.year}</span> 
                   </div>
                   <h3 className="font-serif text-2xl md:text-4xl md:mt-5 mt-2">
                     {project.title}
